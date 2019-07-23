@@ -1,0 +1,22 @@
+{
+  "name": "piroll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VasylBakanovskyi/Piroll.git"
+  },
+  "author": "Vasyl Bakanovskyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VasylBakanovskyi/Piroll/issues"
+  },
+  "homepage": "https://github.com/VasylBakanovskyi/Piroll#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0"
+  }
+}
