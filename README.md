@@ -1,2 +1,2 @@
 # Piroll
-Piroll responsive
+В стадии разработки
