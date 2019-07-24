@@ -1,0 +1,224 @@
+@media (max-width: 1366px) {
+    .wrap {
+        max-width: 100%;
+        padding: 0 50px;
+    }
+}
+@media (max-width: 1280px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .services-container {
+        flex-wrap: wrap;
+    }
+    .service {
+        width: 45%;
+    }
+}
+@media (max-width: 1000px) {
+    .projects-container {
+        justify-content: space-around;
+    }
+    .project {
+        width: 10%;
+    }
+    .footer {
+        &-container {
+            flex-wrap: wrap;
+            text-align: center;
+            .rights {
+                width: 45%;
+                margin-bottom: 60px;
+            }
+        }
+        &__block {
+            width: 45%;
+            &--services {
+                order: -1;
+                margin-bottom: 60px;
+            }
+        }
+    }
+    .social {
+        display: flex;
+        flex-wrap: wrap;
+        .footer__link {
+            width: 45%;
+        }
+    }    
+}
+@media (max-width: 800px) {
+    .text {
+        width: 80%;
+    }
+    .header-container {
+        flex-direction: row;
+        justify-content: center;
+        .logo {
+            display: none;
+        }
+    }
+    .menu {
+        display: none;
+        &-mobile {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            background-color: rgba(0,0,0,0.7);
+            padding: 20px;
+            cursor: pointer;
+            order: -1;
+            z-index: 4;
+            position: fixed;
+            left: 0;
+            top: 0;
+            color: #fff;
+            font-weight: 700;
+            img {
+                width: 45px;
+                height: 30px;
+                color: #fff;
+            }
+            div {
+                display: flex;
+                align-items: center;
+            }
+        }
+        &-side {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            left: 0;
+            top: 70px;
+            z-index: 3;
+            width: 50%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            padding: 100px 30px 0 0;
+            .menu__link {
+                color: #fff;
+                padding: 20px 0;
+            }
+        }
+    }
+    .intro-container {
+        background-image: url(../img/intro_bg-2.png);
+        background-size: 80%;
+        background-position: 50% 50%;
+        &__block {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .text {
+            color: #000;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+    } 
+    
+    .skills {
+        background-position: 50% 50%;
+        &__block {
+            width: 100%;
+            background-color: rgba(255,255,255,0.9);
+        }
+        &-container {
+            width: 100%;
+            background-color: transparent;
+        }
+    }
+    .block {
+        padding: 50px 0;
+    }
+    .work__block .far {
+        font-size: 20px;
+    }
+    .slide-bar {
+        width: 10%;
+    }
+    .clients__link {
+        width: 15%;
+    }
+    .project-order form {
+        width: 80%;
+    }
+    body {
+        min-width: 90%;
+    }
+}
+@media (max-width: 640px) {
+    .wrap {
+        padding: 0 10px;
+    }
+    .block {
+        padding: 30px 0;
+    }
+    .title {
+        line-height: 40px;
+    }
+    .footer-container {
+        .footer__block, .rights{
+            width: 90%;
+            margin: 0 auto 20px;
+            &--services {
+                display: none;
+            }
+        }
+        .social .footer__link {
+            width: 100%;
+        }
+    }
+    .work__block .far {
+        font-size: 14px;
+    }
+    .load-more {
+        padding: 20px 0;
+    }
+    .slide {
+        font-size: 16px;
+        .author {
+            font-size: 14px;
+        }
+        &-bar {
+            width: 20%;
+            margin-top: 20px;
+        }
+    }
+    .project-order {
+        .name,
+        .email {
+            width: 100%;
+        }
+        textarea {
+            height: 100px;
+        }
+    }  
+    .projects-container {
+        flex-wrap: wrap;
+    }
+    .project {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 416px) {
+    .header-container {
+        justify-content: flex-end;
+    }
+    .menu__link {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 320px) {
+    .menu-side {
+        width: 90%;
+    }
+}
