@@ -1,6 +1,6 @@
 const menuSide = document.querySelector('.menu-side');
 const menuIcon = document.querySelector('.menu-mobile img');
-    
+
 document.body.addEventListener('click', function(e) {
     const el = e.target;
     
