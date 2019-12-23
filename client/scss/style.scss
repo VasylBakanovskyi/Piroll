@@ -1,3 +1,5 @@
+
+
 $bg-color: #10c9c3;
 
 * {
@@ -348,8 +350,10 @@ header {
         height: 200px;
     }
 }
+
 @import 'footer';
 @import 'responsive';
+
 .hidden {
     display: none;
 }

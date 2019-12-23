@@ -11,5 +11,4 @@ document.body.addEventListener('click', function(e) {
     if (el !== menuSide && !el.closest('.menu-side')) {
         menuSide.classList.add('hidden');
     }
-
 })
