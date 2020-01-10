@@ -1,64 +1,14 @@
-@import 'variables';
-
-* {
-    box-sizing: border-box;
-}
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-.wrap {
-    max-width: 1366px;
-    margin: 0 auto;
-    padding: 0 100px;
-}
-.panel {
-    padding: 100px 0;
-}
-.link {
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.text {
-    color: #787878;
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 40px;
-    width: 60%;
-    text-align: center;
-}
-.title {
-    color: #191919;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 60px;
-    margin-bottom: 30px;
-}
-.btn {
-    font-size: 14px;
-    font-weight: 700;
-    color: #fff;
-    padding: 20px 40px;
-    border-radius: 5px;
-    background-color: $bg-color;
-    text-transform: uppercase;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: .2s;
-    &:hover {
-        background-color: rgb(32, 228, 221);
-        color: rgb(71, 70, 70);
-    }
-}
+@import 'colors';
+@import 'common';
 
 .header {
-    background-color: #e9e9e9;
+    background-color: $panel-color;
     padding: 40px 0;
     &__panel {
         display: flex;
         justify-content: space-between;
         .logo {
-            color: #191919;
+            color: $title-color;
             font-size: 16px;
             font-weight: 700;
             display: flex;
@@ -69,7 +19,7 @@ body {
 .menu {
     width: 75%;
     &__link {
-        color: #191919;
+        color: $title-color;
         font-size: 16px;
         font-weight: 700;
         margin-left: 30px;
@@ -77,19 +27,24 @@ body {
         padding-bottom: 10px;
         border-bottom: 3px solid transparent;
         &:hover {
-            color: $bg-color;
-            border-color: $bg-color;
+            color: $main-color;
+            border-color: $main-color;
         }
     }
     &-mobile {
         display: none;
+        &__logo {
+            background-color: $main-color;
+            padding: 2px;
+            border-radius: 2px;
+        }
     }
     &-side {
         display: none;
     }
 }
 .intro {
-    background-color: #e9e9e9;
+    background-color: $panel-color;
     &__panel {
         background-image: url(../img/intro_bg.png);
         background-repeat: no-repeat;
@@ -101,7 +56,7 @@ body {
         margin-left: auto;
     }
     &__title {
-        color: #1d1d1d;
+        color: $title-color;
     }
     &__text {
         width: 100%;
@@ -118,7 +73,7 @@ body {
     background: url(../img/skill.png) 0 50% no-repeat;
     position: relative;
     &__bg {
-        background-color: #f8f9f9;
+        background-color: $panel-color;
         width: 50%;
         height: 100%;
         position: absolute;
@@ -129,7 +84,7 @@ body {
     &__panel {
         width: 50%;
         margin-right: auto;
-        background-color: #f8f9f9;
+        background-color: $panel-color;
         position: relative;
         z-index: 2
     }
@@ -140,7 +95,7 @@ body {
 .progress-bar__block {
     display: flex;
     flex-direction: column;
-    color: #000000;
+    color: $title-color;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
@@ -153,7 +108,7 @@ body {
     }
 }
 .projects {
-    background-color: $bg-color;
+    background-color: $main-color;
     &__panel {
         display: flex;
         justify-content: space-between;
@@ -163,7 +118,7 @@ body {
 }
 .project {
     width: 23%;
-    color: #fff;
+    color: $white;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -204,7 +159,7 @@ body {
             top: 43%;
             left: 43%;
             font-size: 40px;
-            color: #000;
+            color: $title-color;
             margin: auto auto;
             display: none;            
         }
@@ -222,19 +177,20 @@ body {
     display: flex;
     justify-content: center;
     padding: 40px 0;
-    background-color: #f5f5f5;
-    color: #8e8e8e;
+    background-color: $panel-color;
+    color: $title-color;
     font-size: 14px;
     font-weight: 700;
     transition: .2s;
     border-radius: 0 0 10px 10px;
+    border: 1px solid transparent;
     &:hover {
-        color: #696969;
-        background-color: #ece8e8;
+        background-color: $white;
+        border-color: $panel-color;
     }
 }
 .services {
-    background-color: #f5f5f5;
+    background-color: $panel-color;
     &__panel {
         display: flex;
         flex-wrap: wrap;
@@ -246,29 +202,29 @@ body {
     margin-bottom: 40px;
     text-align: center;
     &__title {
-        color: #191919;
+        color: $title-color;
         font-size: 14px;
         font-weight: 600;
         text-transform: uppercase;
         margin: 20px 0;
     }
     &__text {
-        color: #787878;
+        color: $text-color;
         font-size: 16px;
     }
     .far, .fas {
         font-size: 35px;
-        color: rgb(80, 79, 79);
+        color: $title-color;
     }
 }
 .slider {
-    background-color: $bg-color;
+    background-color: $main-color;
 }
 .slide {
     width: 60%;
     margin: 0 auto;
     text-align: center;
-    color: #fff;
+    color: $white;
     font-size: 24px;
     font-weight: 500;
     &-bar {
@@ -283,7 +239,7 @@ body {
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        border: 2px solid #fff;
+        border: 2px solid $white;
     }
 }
 .author {
@@ -292,12 +248,12 @@ body {
     text-transform: uppercase;
 }
 .clients {
-    background-color: #fff;
+    background-color: $white;
     &__panel {
         padding: 40px 0;
         display: flex;
         justify-content: space-around;
-        background-color: #fff;
+        background-color: $white;
     }
     &__link {
         width: 10%;
@@ -345,6 +301,3 @@ body {
 @import 'footer';
 @import 'responsive';
 
-.is-hidden {
-    display: none;
-}

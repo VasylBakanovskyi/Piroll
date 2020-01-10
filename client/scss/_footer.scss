@@ -1,5 +1,5 @@
 .footer {
-    background-color: #141414;
+    background-color: $title-color;
     &__panel {
         display: flex;
         justify-content: space-between;
@@ -8,7 +8,7 @@
         }
     }
     &-info {
-        color: #bcbcbc;    
+        color: $panel-color;    
         &--services {
             display: flex;
             justify-content: space-between;
@@ -23,18 +23,18 @@
         }
     }
     &__title {
-        color: #fff;
+        color: $white;
         margin-bottom: 25px;
     }
     &__link {
         display: block;
         margin-bottom: 10px;
-        color: #bcbcbc;
+        color: $panel-color;
         font-size: 15px;
         transition: .2s;
 
         &:hover {
-            color: #fff;
+            color: $white;
         }
     }
     
