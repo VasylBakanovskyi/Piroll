@@ -5,10 +5,10 @@ document.body.addEventListener('click', function(e) {
     const el = e.target;
     
     if (el === menuIcon) {
-        menuSide.classList.toggle('hidden');
+        menuSide.classList.toggle('is-hidden');
         return;
     }
     if (el !== menuSide && !el.closest('.menu-side')) {
-        menuSide.classList.add('hidden');
+        menuSide.classList.add('is-hidden');
     }
 })

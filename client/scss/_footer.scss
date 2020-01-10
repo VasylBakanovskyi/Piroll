@@ -1,15 +1,13 @@
-footer {
-    background-color: #141414;
-}
 .footer {
-    &-container {
+    background-color: #141414;
+    &__panel {
         display: flex;
         justify-content: space-between;
         .rights {
             width: 30%;
         }
     }
-    &__block {
+    &-info {
         color: #bcbcbc;    
         &--services {
             display: flex;
