@@ -1,36 +1,44 @@
 .footer {
     background-color: $title-color;
+
     &__panel {
         display: flex;
         justify-content: space-between;
+
         .rights {
             width: 30%;
         }
     }
+
     &-info {
-        color: $panel-color;    
+        color: $panel-color;  
+
         &--services {
             display: flex;
-            justify-content: space-between;
             flex-wrap: wrap;
+            justify-content: space-between;
             width: 20%;
+
             .footer__link {
                 width: 50%;
             }
         }
+
         .email__link {
             text-transform: lowercase;
         }
     }
+
     &__title {
         color: $white;
         margin-bottom: 25px;
     }
+
     &__link {
-        display: block;
-        margin-bottom: 10px;
         color: $panel-color;
+        display: block;
         font-size: 15px;
+        margin-bottom: 10px;
         transition: .2s;
 
         &:hover {
