@@ -70,6 +70,22 @@ body {
     margin: 3px 0;
     width: 25px; }
 
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+progress::-webkit-progress-bar {
+  background: #c2c2ff; }
+
+progress::-moz-progress-bar {
+  background: #c2c2ff; }
+
+progress::-webkit-progress-value {
+  background: #5252dd; }
+
+progress::-moz-progress-value {
+  background: #5252dd; }
+
 .header {
   background-color: #e9e9e9;
   padding: 40px 0; }
