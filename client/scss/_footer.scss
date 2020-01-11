@@ -1,42 +1,48 @@
-footer {
-    background-color: #141414;
-}
 .footer {
-    &-container {
+    background-color: $title-color;
+
+    &__panel {
         display: flex;
         justify-content: space-between;
+
         .rights {
             width: 30%;
         }
     }
-    &__block {
-        color: #bcbcbc;    
+
+    &-info {
+        color: $panel-color;  
+
         &--services {
             display: flex;
-            justify-content: space-between;
             flex-wrap: wrap;
+            justify-content: space-between;
             width: 20%;
+
             .footer__link {
                 width: 50%;
             }
         }
+
         .email__link {
             text-transform: lowercase;
         }
     }
+
     &__title {
-        color: #fff;
+        color: $white;
         margin-bottom: 25px;
     }
+
     &__link {
+        color: $panel-color;
         display: block;
-        margin-bottom: 10px;
-        color: #bcbcbc;
         font-size: 15px;
+        margin-bottom: 10px;
         transition: .2s;
 
         &:hover {
-            color: #fff;
+            color: $white;
         }
     }
     
